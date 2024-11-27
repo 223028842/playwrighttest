@@ -12,6 +12,7 @@ class order_page_elements:
         self.termsconditions=page.get_by_role("checkbox")
         self.promocodetxtbox=page.get_by_placeholder("Enter promo code")
         self.promoinfo=page.locator(".promoInfo")
+        self.validmsg =page.get_by_text("Code applied ..!")
 
     def test_proceedCheckout(self,country):
         self.promocodetxtbox.wait_for()
@@ -24,8 +25,7 @@ class order_page_elements:
         self.promocodetxtbox.click()
         self.promocodetxtbox.fill("rahulshettyacademy")
         self.applyBtn.click()
-        #self.promoinfo.wait_for()
-        expect(self.promoinfo).to_have_value("Code applied ..!").wait_for()
+        self.validmsg.wait_for()
         expect(self.promoinfo).to_have_text("Code applied ..!")
         self.placeorderBtn.click()
         self.selectCountry.wait_for()
