@@ -14,3 +14,4 @@ class Login_sso:
             self.pswd.click()
             self.pswd.fill(password)
             self.logInBtn.click()
+
