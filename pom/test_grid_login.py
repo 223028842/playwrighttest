@@ -18,7 +18,7 @@ class test_grid_login:
 
     def test_login(self):
         self.page.goto(utilities.secret_config.APPURL)
-        self.page.set_default_timeout(3000)
+        #self.page.set_default_timeout(3000)
         self.usernametxt.fill(utilities.secret_config.USER)
         self.domain.locator('div').nth(2).click()
         self.domainoption.click()
