@@ -1,4 +1,3 @@
-from _pyrepl import console
 from playwright.sync_api import expect
 
 
@@ -20,7 +19,7 @@ class test_all_tickets_page:
         self.backarrow.click()
         self.SearchIcon.click()
         self.SearchText.fill(devicename)
-        self.page.keyboard.press('Enter');
+        self.page.keyboard.press('Enter')
         self.page.get_by_role('row').first
         originaldevicename = self.devicename.text_content(timeout=30000)
         print(originaldevicename)
