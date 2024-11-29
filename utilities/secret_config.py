@@ -1,5 +1,5 @@
 USERNAME='223028842'
-PASSWORD ='D@rsh1n1247b'
+PASSWORD ='XXXXXXX'
 APPURL='https://idms-k8s-wvvznpjg-ing-875df1bdbaca23a6.elb.us-east-1.amazonaws.com/gridos-adms-ui'
 SAMPLEAPPURL='https://rahulshettyacademy.com/seleniumPractise/#/'
 USER='supervisor'
